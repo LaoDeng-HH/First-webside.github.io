@@ -1,0 +1,182 @@
+body {
+    display: flex;
+
+}
+
+.box {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50px);
+    margin-top: 150px;
+    /* background-color: #000; */
+}
+
+.rank1,
+.rank2,
+.rank3,
+.rank4,
+.rank5,
+.rank6,
+.rank7,
+.rank8 {
+    position: absolute;
+}
+
+.rank1 {
+    top: 0;
+    left: 0;
+    background-color: rgb(248,100,162);
+    animation: cartoon-1 2s ease-out infinite;
+
+}
+
+.rank2 {
+    right: 0;
+    bottom: 0;
+    background-color: rgb(149,35,172);
+    animation: cartoon-2 2s ease-out infinite;
+}
+
+.rank3 {
+    left: 20px;
+    top: -20px;
+    width: 2px;
+    height: 140px;
+    background-color: black;
+    animation: cartoon-3 2s ease-out infinite;
+}
+
+.rank4 {
+    left: -20px;
+    top: 20px;
+    width: 140px;
+    height: 2px;
+    background-color: black;
+    animation: cartoon-4 2s ease-out infinite;
+}
+
+@keyframes cartoon-1 {
+    0% {
+        width: 20px;
+        height: 20px;
+    }
+
+    25% {
+        width: 80px;
+        height: 20px;
+    }
+
+    50% {
+        width: 80px;
+        height: 80px;
+    }
+
+    75% {
+        width: 20px;
+        height: 80px;
+    }
+
+    100% {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@keyframes cartoon-2 {
+    0% {
+        width: 80px;
+        height: 80px;
+    }
+
+    25% {
+        width: 20px;
+        height: 80px;
+    }
+
+    50% {
+        width: 20px;
+        height: 20px;
+    }
+
+    75% {
+        width: 80px;
+        height: 20px;
+    }
+
+    100% {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@keyframes cartoon-3 {
+    0%{left: 20px;}
+    25%{left: 80px;}
+    50%{left: 80px;}
+    75%{left: 20px;}
+    100%{left: 20px;}
+}
+
+@keyframes cartoon-4 {
+    0%{top: 20px;}
+    25%{top: 20px;}
+    50%{top: 80px;}
+    75%{top: 80px;}
+    100%{top: 20px;}
+}
+
+.rank5 {
+
+    left: -20px;
+    top: -2px;
+    width: 140px;
+    height: 2px;
+    background-color: black;
+}
+
+.rank6 {
+
+    left: -20px;
+    top: 100px;
+    width: 140px;
+    height: 2px;
+    background-color: black;
+}
+
+.rank7 {
+
+    left: -2px;
+    top: -20px;
+    width: 2px;
+    height: 140px;
+    background-color: black;
+}
+
+.rank8 {
+
+    left: 100px;
+    top: -20px;
+    width: 2px;
+    height: 140px;
+    background-color: black;
+}
+
+
+.rank3,
+.rank4,
+.rank5,
+.rank6,
+.rank7,
+.rank8 {
+   background-color: rgb(0, 0, 0);
+}
+
+.loading {
+    width: 200px;
+    margin-top: 130px;
+    font-weight: 700;
+    font-size: 20px;
+}

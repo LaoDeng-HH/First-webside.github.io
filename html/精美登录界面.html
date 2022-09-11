@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精美登录界面</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="box">
+        <div class="pre-box">
+            <h1>WELCOME</h1>
+            <P>JOIN US!</P>
+            <div class="img-box">
+                <!-- <img src="/img/bai.png" alt=""> -->
+            </div>
+        </div>
+        <div class="register-form">
+            <div class="login-form">
+                <div class="title-box">
+                    <h1>注册</h1>
+                </div>
+                <!-- 登录框 -->
+                <div class="input-box">
+                    <input type="text" placeholder="用户名">
+                    <input type="password" placeholder="密码">
+                    <input type="password" placeholder="确认密码">
+                </div>
+                <div class="btn-box">
+                    <button>立即注册</button>
+                    <p onclick="mySwitch()">已有账号？去登录</p>
+                </div>
+            </div>
+            <div class="login-form">
+                <div class="title-box">
+                    <h1>登录</h1>
+                </div>
+                <!-- 登录框 -->
+                <div class="input-box">
+                    <input type="text" placeholder="用户名">
+                    <input type="password" placeholder="密码">
+                </div>
+                <div class="btn-box">
+                    <button>确认登录</button>
+                    <p onclick="mySwitch()">已有账号？去注册</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-latest.js">
+        let flag = true
+        const mySwith = () => {
+            if (flag) {
+                $(".pre-box").css("transform", "translateX(100%)")
+                $(".pre-box").css("background-color", "#c9e0ed")
+                $(".img").attr("src", "")
+            } else {
+                $(".pre-box").css("transform", "translateX(100%)")
+                $(".pre-box").css("background-color", "#c9e0ed")
+                $(".img").attr("src", "")
+            }
+            flag != flag
+        }
+    </script>
+</body>
+</html>
